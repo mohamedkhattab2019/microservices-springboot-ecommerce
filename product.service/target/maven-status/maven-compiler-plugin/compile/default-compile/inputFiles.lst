@@ -1,7 +1,0 @@
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/ProductServiceApplication.java
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/model/Product.java
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/repository/ProductRepository.java
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/dto/ProductRequest.java
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/dto/ProductResponse.java
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/service/ProductService.java
-/home/mohamedkhattab/JavaDev/workeSpace/microservices-springboot-ecommerce/product.service/src/main/java/com/khattabEcommerce/product/service/controller/ProductController.java

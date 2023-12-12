@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Inter service communication sync protocol applied between order-service and inventory-service using spring boot webClient.&#10;create Inventory Response and change findBySkuCode to take list of string of skuCodes and to select where in these codes which passed as query param and return ech code and isInStock or not to order-service">
-      <change afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/khattab/ecommerce/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/config/WebClientConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/surefire-reports/TEST-com.khattabEcommerce.product.service.ProductServiceApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/surefire-reports/com.khattabEcommerce.product.service.ProductServiceApplicationTests.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +185,56 @@
       <option name="project" value="LOCAL" />
       <updated>1702387562859</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create discovery server service to act as DS and has spring-cloud-starter-netflix-eureka-server dependency">
+      <created>1702397680554</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397680554</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url">
+      <created>1702397823836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397823836</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url and enable multiple instance for inventory-service">
+      <created>1702397880123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397880123</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url">
+      <created>1702397905293</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397905293</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url">
+      <created>1702397913422</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397913422</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url">
+      <created>1702397937977</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397937977</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url">
+      <created>1702397948989</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397948989</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +255,9 @@
     <MESSAGE value="create Order service connected to Mysql client, with end point;Place order." />
     <MESSAGE value="create Inventory service connected to Mysql client, with end point;Check product availability on stock." />
     <MESSAGE value="Inter service communication sync protocol applied between order-service and inventory-service using spring boot webClient.&#10;create Inventory Response and change findBySkuCode to take list of string of skuCodes and to select where in these codes which passed as query param and return ech code and isInStock or not to order-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inter service communication sync protocol applied between order-service and inventory-service using spring boot webClient.&#10;create Inventory Response and change findBySkuCode to take list of string of skuCodes and to select where in these codes which passed as query param and return ech code and isInStock or not to order-service" />
+    <MESSAGE value="create discovery server service to act as DS and has spring-cloud-starter-netflix-eureka-server dependency" />
+    <MESSAGE value="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url and enable multiple instance for inventory-service" />
+    <MESSAGE value="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url" />
+    <option name="LAST_COMMIT_MESSAGE" value="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url" />
   </component>
 </project>

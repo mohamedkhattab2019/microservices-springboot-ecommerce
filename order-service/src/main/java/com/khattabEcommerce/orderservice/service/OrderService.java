@@ -1,5 +1,6 @@
 package com.khattabEcommerce.orderservice.service;
 
+import com.khattabEcommerce.orderservice.dto.InventoryResponse;
 import com.khattabEcommerce.orderservice.dto.OrderLineItemsDto;
 import com.khattabEcommerce.orderservice.dto.OrderRequest;
 import com.khattabEcommerce.orderservice.model.Order;
@@ -9,7 +10,9 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -19,9 +22,11 @@ import java.util.stream.Collectors;
 public class OrderService {
     private ModelMapper modelMapper;
     private final OrderRepository orderRepository;
-    public OrderService(ModelMapper modelMapper, OrderRepository orderRepository) {
+    private final WebClient webClient;
+    public OrderService(ModelMapper modelMapper, OrderRepository orderRepository, WebClient webClient) {
         this.modelMapper = modelMapper;
         this.orderRepository = orderRepository;
+        this.webClient = webClient;
     }
 
     public void placeOrder(@RequestBody OrderRequest orderRequest){
@@ -29,18 +34,32 @@ public class OrderService {
         System.out.println(orderRequest.getOrderLineItemsDtoList());
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
-        List<OrderLineItems> orderLineItems =  orderRequest.getOrderLineItemsDtoList().stream().map(orderLineItemsDto -> mapToDto(orderLineItemsDto)).collect(Collectors.toList());
+        List<OrderLineItems> orderLineItems =  orderRequest.getOrderLineItemsDtoList().stream().map(this::mapToDto).collect(Collectors.toList());
 
         order.setOrderLineItemsList(orderLineItems);
 
+        List<String> skuCodes = order.getOrderLineItemsList().stream().map(OrderLineItems::getSkuCode).collect(Collectors.toList());
         // Call Inventory service, and place order if order is in stock
+        InventoryResponse[] inventoryResponsesArray = webClient.get()
+                .uri("http://localhost:8082/api/inventory",
+                        uriBuilder -> uriBuilder.queryParam("skuCode",skuCodes).build())
+                .retrieve()
+                .bodyToMono(InventoryResponse[].class)
+                .block();
 
-        orderRepository.save(order);
+
+        assert inventoryResponsesArray != null;
+        boolean allProductsInStock = Arrays.stream(inventoryResponsesArray).allMatch(InventoryResponse::isInStock);
+        if(allProductsInStock){
+
+            orderRepository.save(order);
+        }
+        else {
+            throw new IllegalArgumentException("Product is not in stock, please try again later");
+        }
     }
 
     private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto) {
-        OrderLineItems orderLineItems = modelMapper.map(orderLineItemsDto,OrderLineItems.class);
-
-        return orderLineItems;
+        return modelMapper.map(orderLineItemsDto,OrderLineItems.class);
     }
 }

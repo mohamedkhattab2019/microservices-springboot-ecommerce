@@ -4,60 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/workeSpace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/.idea/microservice-parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/src/test/java/com/khattabEcommerce/inventoryservice/InventoryServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/SpringbootDynamodbCrudApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/config/DynamoDbConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/controller/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/repository/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/test/java/com/springbootdynamodbcrud/SpringbootDynamodbCrudApplicationTests.java" afterDir="false" />
+    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Inter service communication sync protocol applied between order-service and inventory-service using spring boot webClient.&#10;create Inventory Response and change findBySkuCode to take list of string of skuCodes and to select where in these codes which passed as query param and return ech code and isInStock or not to order-service">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/dto/InventoryResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/CommentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/PostDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/repository/InventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/khattabEcommerce/inventoryservice/controller/InventoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/target/classes/com/khattabEcommerce/inventoryservice/controller/InventoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/khattabEcommerce/inventoryservice/repository/InventoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/target/classes/com/khattabEcommerce/inventoryservice/repository/InventoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/com/khattabEcommerce/inventoryservice/service/InventoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/target/classes/com/khattabEcommerce/inventoryservice/service/InventoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/service/OrderService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +62,9 @@
       <recent name="$PROJECT_DIR$/product.service" />
       <recent name="$PROJECT_DIR$/order-service" />
       <recent name="$PROJECT_DIR$/inventory-service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.khattabEcommerce.orderservice.dto" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -167,6 +129,28 @@
       <option name="presentableId" value="Default" />
       <updated>1702317048965</updated>
     </task>
+    <task id="LOCAL-00001" summary="create product service connected to mongodb client, with 2 end points; create product and list all product and add juint test.">
+      <created>1702382123017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702382123017</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create Order service connected to Mysql client, with end point;Place order.">
+      <created>1702382255973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702382255973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create Inventory service connected to Mysql client, with end point;Check product availability on stock.">
+      <created>1702382327204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702382327204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,5 +163,38 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create product service connected to mongodb client, with 2 end points; create product and list all product and add juint test." />
+    <MESSAGE value="create Order service connected to Mysql client, with end point;Place order." />
+    <MESSAGE value="create Inventory service connected to Mysql client, with end point;Check product availability on stock." />
+    <MESSAGE value="Inter service communication sync protocol applied between order-service and inventory-service using spring boot webClient.&#10;create Inventory Response and change findBySkuCode to take list of string of skuCodes and to select where in these codes which passed as query param and return ech code and isInStock or not to order-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inter service communication sync protocol applied between order-service and inventory-service using spring boot webClient.&#10;create Inventory Response and change findBySkuCode to take list of string of skuCodes and to select where in these codes which passed as query param and return ech code and isInStock or not to order-service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

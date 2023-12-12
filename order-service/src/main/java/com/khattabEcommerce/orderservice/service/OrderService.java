@@ -22,11 +22,11 @@ import java.util.stream.Collectors;
 public class OrderService {
     private ModelMapper modelMapper;
     private final OrderRepository orderRepository;
-    private final WebClient webClient;
-    public OrderService(ModelMapper modelMapper, OrderRepository orderRepository, WebClient webClient) {
+    private final WebClient.Builder webClientBuilder;
+    public OrderService(ModelMapper modelMapper, OrderRepository orderRepository, WebClient.Builder webClientBuilder) {
         this.modelMapper = modelMapper;
         this.orderRepository = orderRepository;
-        this.webClient = webClient;
+        this.webClientBuilder = webClientBuilder;
     }
 
     public void placeOrder(@RequestBody OrderRequest orderRequest){
@@ -40,8 +40,8 @@ public class OrderService {
 
         List<String> skuCodes = order.getOrderLineItemsList().stream().map(OrderLineItems::getSkuCode).collect(Collectors.toList());
         // Call Inventory service, and place order if order is in stock
-        InventoryResponse[] inventoryResponsesArray = webClient.get()
-                .uri("http://localhost:8082/api/inventory",
+        InventoryResponse[] inventoryResponsesArray = webClientBuilder.build().get()
+                .uri("http://inventory-service/api/inventory",
                         uriBuilder -> uriBuilder.queryParam("skuCode",skuCodes).build())
                 .retrieve()
                 .bodyToMono(InventoryResponse[].class)

@@ -1,0 +1,9 @@
+com/khattabEcommerce/product/service/dto/ProductRequest.class
+com/khattabEcommerce/product/service/controller/ProductController.class
+com/khattabEcommerce/product/service/ProductServiceApplication.class
+com/khattabEcommerce/product/service/service/ProductService.class
+com/khattabEcommerce/product/service/model/Product$ProductBuilder.class
+com/khattabEcommerce/product/service/repository/ProductRepository.class
+com/khattabEcommerce/product/service/dto/ProductRequest$ProductRequestBuilder.class
+com/khattabEcommerce/product/service/model/Product.class
+com/khattabEcommerce/product/service/dto/ProductResponse.class

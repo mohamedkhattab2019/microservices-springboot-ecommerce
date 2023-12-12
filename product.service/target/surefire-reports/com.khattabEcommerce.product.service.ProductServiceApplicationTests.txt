@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: com.khattabEcommerce.product.service.ProductServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.442 s <<< FAILURE! -- in com.khattabEcommerce.product.service.ProductServiceApplicationTests
+com.khattabEcommerce.product.service.ProductServiceApplicationTests -- Time elapsed: 0.442 s <<< ERROR!
+java.lang.ExceptionInInitializerError
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1155)
+	at java.base/java.lang.reflect.Field.acquireFieldAccessor(Field.java:1132)
+	at java.base/java.lang.reflect.Field.getFieldAccessor(Field.java:1113)
+	at java.base/java.lang.reflect.Field.get(Field.java:425)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.getContainerInstance(TestcontainersExtension.java:252)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$findSharedContainers$10(TestcontainersExtension.java:213)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.findSharedContainers(TestcontainersExtension.java:214)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.beforeAll(TestcontainersExtension.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.lambda$getFirstValidStrategy$7(DockerClientProviderStrategy.java:277)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:268)
+	at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:152)
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:194)
+	at org.testcontainers.DockerClientFactory$1.getDockerClient(DockerClientFactory.java:106)
+	at com.github.dockerjava.api.DockerClientDelegate.authConfig(DockerClientDelegate.java:109)
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:332)
+	at com.khattabEcommerce.product.service.ProductServiceApplicationTests.<clinit>(ProductServiceApplicationTests.java:43)
+	... 17 more
+

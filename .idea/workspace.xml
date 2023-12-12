@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/workeSpace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/.idea/microservice-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../microservice-parent/inventory-service/src/test/java/com/khattabEcommerce/inventoryservice/InventoryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/java/com/khattab/student/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-example/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/SpringbootDynamodbCrudApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/config/DynamoDbConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/repository/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/java/com/springbootdynamodbcrud/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-dynamodb-crud/src/test/java/com/springbootdynamodbcrud/SpringbootDynamodbCrudApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/CommentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/payload/PostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-blog-rest-api/src/main/java/com/springboot/blog/service/impl/PostServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2ZPHxwwzUYdc5tUcHrGByBcU8PW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product.service" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product.service" />
+      <recent name="$PROJECT_DIR$/order-service" />
+      <recent name="$PROJECT_DIR$/inventory-service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.InventoryServiceApplication">
+    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.khattabEcommerce.inventoryservice.InventoryServiceApplication" />
+      <module name="inventory-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.khattabEcommerce.inventoryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.khattabEcommerce.orderservice.OrderServiceApplication" />
+      <module name="order-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.khattabEcommerce.orderservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.khattabEcommerce.product.service.ProductServiceApplication" />
+      <module name="product.service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.khattabEcommerce.product.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InventoryServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.ProductServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="" />
+      <created>1702317048965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702317048965</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

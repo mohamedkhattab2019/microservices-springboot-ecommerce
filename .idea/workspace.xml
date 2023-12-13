@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment=" Add client side load balanced capabilities to  the web client builder">
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/config/WebClientConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/config/WebClientConfig.class" afterDir="false" />
+    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD.">
+      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/khattab/ecommerce/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +73,20 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.InventoryServiceApplication">
+  <component name="RunManager" selected="Application.ApiGatewayApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.khattab.ecommerce.apigateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.khattab.ecommerce.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.khattab.ecommerce.discoveryserver.DiscoveryServerApplication" />
       <module name="discovery-server" />
@@ -129,13 +149,15 @@
       <item itemvalue="Application.InventoryServiceApplication" />
       <item itemvalue="Application.OrderServiceApplication" />
       <item itemvalue="Application.ProductServiceApplication" />
+      <item itemvalue="Application.ApiGatewayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
         <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Application.ProductServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702398503453</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD.">
+      <created>1702398993479</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702398993479</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,6 +293,7 @@
     <MESSAGE value="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url and enable multiple instance for inventory-service" />
     <MESSAGE value="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url" />
     <MESSAGE value=" Add client side load balanced capabilities to  the web client builder" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Add client side load balanced capabilities to  the web client builder" />
+    <MESSAGE value="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD." />
+    <option name="LAST_COMMIT_MESSAGE" value="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD." />
   </component>
 </project>

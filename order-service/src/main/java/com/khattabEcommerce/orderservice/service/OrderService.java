@@ -29,7 +29,7 @@ public class OrderService {
         this.webClientBuilder = webClientBuilder;
     }
 
-    public void placeOrder(@RequestBody OrderRequest orderRequest){
+    public String placeOrder(@RequestBody OrderRequest orderRequest){
         System.out.println(orderRequest);
         System.out.println(orderRequest.getOrderLineItemsDtoList());
         Order order = new Order();
@@ -51,8 +51,8 @@ public class OrderService {
         assert inventoryResponsesArray != null;
         boolean allProductsInStock = Arrays.stream(inventoryResponsesArray).allMatch(InventoryResponse::isInStock);
         if(allProductsInStock){
-
             orderRepository.save(order);
+            return "order Placed successfully";
         }
         else {
             throw new IllegalArgumentException("Product is not in stock, please try again later");

@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD.">
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/khattab/ecommerce/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Change product service server port to random instead of port 8080 which will used by api-gateway">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/khattab/ecommerce/apigateway/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/khattab/ecommerce/discoveryserver/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/khattabEcommerce/inventoryservice/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/khattabEcommerce/orderservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/com/khattabEcommerce/orderservice/service/OrderService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/product.service" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,7 +78,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.OrderServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.khattab.ecommerce.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -153,11 +158,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Application.DiscoveryServerApplication" />
-        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.InventoryServiceApplication" />
+        <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +273,35 @@
       <option name="project" value="LOCAL" />
       <updated>1702398993479</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add new module api-gateway to route requests from client to services">
+      <created>1702473176622</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702473176622</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add new module api-gateway to route requests from client to services">
+      <created>1702473207853</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702473207853</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Define Product Service Route, Order Service Route, Discovery Server Route, and Discovery Server Static resources Route in api-gateway">
+      <created>1702473284707</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702473284707</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Change product service server port to random instead of port 8080 which will used by api-gateway">
+      <created>1702473348633</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702473348633</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,6 +327,9 @@
     <MESSAGE value="add spring-cloud-starter-netflix-eureka-client dependency to the three services to act as client and add the SD url" />
     <MESSAGE value=" Add client side load balanced capabilities to  the web client builder" />
     <MESSAGE value="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD." />
-    <option name="LAST_COMMIT_MESSAGE" value="Call Inventory service using spring.application.name=inventory-service from order service.&#10;Test cases:&#10;1- Stop Discovery service you can place order as the order service keep local copy of service registry&#10;2- stop the two instances of the inventory service and run new one while the discovery server is down also, you can't reach now the inventory-service it also will fire some errors as not found the SD." />
+    <MESSAGE value="Add new module api-gateway to route requests from client to services" />
+    <MESSAGE value="Define Product Service Route, Order Service Route, Discovery Server Route, and Discovery Server Static resources Route in api-gateway" />
+    <MESSAGE value="Change product service server port to random instead of port 8080 which will used by api-gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change product service server port to random instead of port 8080 which will used by api-gateway" />
   </component>
 </project>

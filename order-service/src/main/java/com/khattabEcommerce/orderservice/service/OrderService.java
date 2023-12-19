@@ -3,10 +3,12 @@ package com.khattabEcommerce.orderservice.service;
 import com.khattabEcommerce.orderservice.dto.InventoryResponse;
 import com.khattabEcommerce.orderservice.dto.OrderLineItemsDto;
 import com.khattabEcommerce.orderservice.dto.OrderRequest;
+import com.khattabEcommerce.orderservice.event.OrderPlacedEvent;
 import com.khattabEcommerce.orderservice.model.Order;
 import com.khattabEcommerce.orderservice.model.OrderLineItems;
 import com.khattabEcommerce.orderservice.repository.OrderRepository;
 import org.modelmapper.ModelMapper;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,10 +23,12 @@ import java.util.stream.Collectors;
 @Transactional
 public class OrderService {
     private ModelMapper modelMapper;
+    private final KafkaTemplate<String,OrderPlacedEvent> kafkaTemplate;
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
-    public OrderService(ModelMapper modelMapper, OrderRepository orderRepository, WebClient.Builder webClientBuilder) {
+    public OrderService(ModelMapper modelMapper, KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate, OrderRepository orderRepository, WebClient.Builder webClientBuilder) {
         this.modelMapper = modelMapper;
+        this.kafkaTemplate = kafkaTemplate;
         this.orderRepository = orderRepository;
         this.webClientBuilder = webClientBuilder;
     }
@@ -52,6 +56,7 @@ public class OrderService {
         boolean allProductsInStock = Arrays.stream(inventoryResponsesArray).allMatch(InventoryResponse::isInStock);
         if(allProductsInStock){
             orderRepository.save(order);
+            kafkaTemplate.send("notificationTopic",new OrderPlacedEvent(order.getOrderNumber()));
             return "order Placed successfully";
         }
         else {

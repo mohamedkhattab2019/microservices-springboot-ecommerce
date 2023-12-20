@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Implement Resilience Kafka spring cloud producer(order service) and consumer(notification service)">
+    <list default="true" id="2900bcef-4619-424c-aa2c-8fbfb958d156" name="Changes" comment="Implement monitoring using Prometheus and Grafana">
       <change afterPath="$PROJECT_DIR$/gfdata/alerting/1/__default__.tmpl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gfdata/grafana.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product.service/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +68,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -354,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702987098887</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Implement monitoring using Prometheus and Grafana">
+      <created>1703095245408</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1703095245408</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +379,8 @@
     <MESSAGE value="Change product service server port to random instead of port 8080 which will used by api-gateway" />
     <MESSAGE value="Security&#10;Implement Resilience circuit breaker" />
     <MESSAGE value="Implement Resilience Kafka spring cloud producer(order service) and consumer(notification service)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Resilience Kafka spring cloud producer(order service) and consumer(notification service)" />
+    <MESSAGE value="Implement monitoring using Prometheus and Grafana" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement monitoring using Prometheus and Grafana" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

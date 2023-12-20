@@ -40,4 +40,4 @@ mongo-data
 /postgres-inventory/
 /postgres-order/
 /realms/
-/grafana/
+/gfdata/
